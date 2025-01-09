@@ -1,0 +1,21 @@
+Frame
+
+  - изготовление каркаса ( изготовление заданного каркаса машины )
+    - длительность: 15ч
+    - материалы: Steel(1) , Welding wire(2)
+    - инструменты: welding machine, hammer, spanner, clamp
+
+Interior
+
+  - изготовление элементов салона
+      - длительность: 20ч
+      - материалы: Leather (4) / Textile (6), Plastic (5)
+      - инструменты: industrial sewing machine, hammer, screwdriver, clamp, Thermoforming press
+
+CarParts
+
+  - точение (Обработка деталей вращением заготовки на токарном станке с помощью режущего инструмента)
+      - длительность: 4ч
+      - материалы: Steel (1), Cast iron (7)
+      - инструменты: lathe, hammer
+

@@ -1,0 +1,15 @@
+databaseChangelog:
+  -changeSet:
+    id: 1
+    author: Veteroch4k
+    changes:
+      - createTable:
+          tableName: op_materials
+          columns:
+            -column:
+              autoIncrement: true
+              constraints:
+                nullable: false
+                primaryKey: true
+              name: id
+              type: INT

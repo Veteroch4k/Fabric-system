@@ -10,7 +10,6 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import veteroch4k.firm_system.firm.models.factories.Factory;
 
 @NoArgsConstructor
 @AllArgsConstructor

@@ -1,0 +1,36 @@
+databaseChangelog:
+  - changeSet:
+      id: 0
+      author: Veteroch4k
+      changes:
+        - createTable:
+            tableName: operations
+            columns:
+              - column:
+                autoIncrement: true
+                constraints:
+                  nullable: false
+                  primaryKey: true
+                name: id
+                type: INT
+              - column:
+                  constraints:
+                    nullable: false
+                  name: name
+                  type: TEXT
+              - column:
+                  constraints:
+                    nullable: false
+                  name: description
+                  type: TEXT
+              - column:
+                  constraints:
+                    nullable: false
+                  name: duration
+                  type: INT
+            rollback:
+              - dropTable:
+                  tableName: operations
+
+
+

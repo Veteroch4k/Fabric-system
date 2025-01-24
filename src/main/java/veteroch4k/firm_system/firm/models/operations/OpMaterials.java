@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import jakarta.persistence.Column;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -26,12 +27,12 @@ public class OpMaterials {
   @EmbeddedId
   private OpMaterialsId id = new OpMaterialsId();
 
-  @ManyToOne
-  @MapsId("operation_id")
+  @ManyToOne(fetch = FetchType.LAZY)
+  @MapsId("operationId")
   private Operation operation;
 
-  @ManyToOne
-  @MapsId("material_id")
+  @ManyToOne(fetch = FetchType.LAZY)
+  @MapsId("materialId")
   private Material material;
 
   private int quantity;

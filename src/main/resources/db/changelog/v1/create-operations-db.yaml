@@ -31,6 +31,3 @@ databaseChangelog:
             rollback:
               - dropTable:
                   tableName: operations
-
-
-

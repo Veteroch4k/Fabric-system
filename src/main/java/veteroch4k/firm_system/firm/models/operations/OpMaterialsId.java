@@ -14,9 +14,9 @@ import lombok.NoArgsConstructor;
 public class OpMaterialsId implements Serializable {
 
   @Column(name = "operation_id")
-  private int operation_id;
+  private int operationId;
 
   @Column(name = "material_id")
-  private int material_id;
+  private int materialId;
 
 }

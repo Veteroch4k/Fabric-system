@@ -1,0 +1,34 @@
+databaseChangeLog:
+  - changeSet:
+      id: 4
+      author: Veteroch4k
+      changes:
+        - createTable:
+            tableName: free_tools
+            columns:
+              - column:
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                  type: INT
+                  name: id
+              - column:
+                  constraints:
+                    nullable: false
+                    foreignKey: true
+                    references: tools(id)
+                  type: INT
+                  name: tool_id
+              - column:
+                  constraints:
+                    nullable: false
+                    foreignKey: true
+                    references: toolTypes(id)
+                  type: INT
+                  name: toolType_id
+              - column:
+                  constraints:
+                    nullable: false
+                  type: DATE
+                  name: receiveDate
+

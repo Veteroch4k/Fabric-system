@@ -25,7 +25,7 @@ import veteroch4k.firm_system.firm.models.operations.Operation;
 public class Drawing {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @GeneratedValue(strategy = GenerationType.SEQUENCE)
   private int id;
 
   @OneToOne

@@ -1,0 +1,34 @@
+databaseChangeLog:
+  - changeSet:
+    id: 2
+    author: Veteroch4k
+    changes:
+      - createTable:
+          tableName: op_tools
+          columns:
+            - column:
+                autoincrement: true
+                constraints:
+                  primaryKey: true
+                  nullable: false
+                name: id
+                type: INT
+            - column:
+                constraints:
+                  nullable: false
+                  foreignKey: true
+                  references: operation(id)
+                type: INT
+                name: operation_id
+            - column:
+                constraints:
+                  nullable: false
+                  foreignKLey: true
+                  references: toolTypes(id)
+                type: INT
+                name: toolType_id
+            - column:
+                constraints:
+                  nullable: false
+                type: INT
+                text: quantity

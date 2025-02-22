@@ -24,7 +24,6 @@ public class Tool  {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int id;
 
-  @Column(name = "toolType_id")
   @ManyToOne
   @JoinColumn(name = "toolType_id")
   private ToolType toolType;

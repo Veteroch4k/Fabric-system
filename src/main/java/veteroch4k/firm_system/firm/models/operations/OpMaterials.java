@@ -12,6 +12,11 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.MapsId;
 import jakarta.persistence.Table;
+import java.util.Collections;
+import java.util.Deque;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -25,7 +30,7 @@ import veteroch4k.firm_system.firm.models.consumables.Material;
 public class OpMaterials {
 
   @EmbeddedId
-  private OpMaterialsId id = new OpMaterialsId();
+  private OpMaterialsId id;
 
   @ManyToOne(fetch = FetchType.LAZY)
   @MapsId("operationId")
@@ -36,5 +41,6 @@ public class OpMaterials {
   private Material material;
 
   private int quantity;
+
 
 }

@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      author: Veteroch4k
+      id: 3
+      changes:
+        - createTable:
+            tableName: employers
+            columns:
+              - column:
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                  type: INT
+                  name: id
+              - column:
+                  constraints:
+                    nullable: false
+                  type: TEXT
+                  name: name

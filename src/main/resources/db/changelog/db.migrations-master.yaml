@@ -1,68 +1,69 @@
-databaseChangelog:
+databaseChangeLog:
   - include:
-    file: v1/create-drawings-table.yaml
-    relativeToChangelogFile: true
-  - include:
-    file: v1/create-employer-table.yaml
-    relativeToChangelogFile: true
+      file: v1/create-operations-table.yaml
+      relativeToChangelogFile: true
 
   - include:
-    file: v1/create-factories-table.yaml
-    relativeToChangelogFile: true
+      file: v1/create-factories-table.yaml
+      relativeToChangelogFile: true
 
   - include:
-    file: v1/create-factory_materials-table.yaml
-    relativeToChangelogFile: true
+      file: v1/create-drawings-table.yaml
+      relativeToChangelogFile: true
 
   - include:
-    file: v1/create-factory_tools-table.yaml
-    relativeToChangelogFile: true
+      file: v1/create-employer-table.yaml
+      relativeToChangelogFile: true
 
   - include:
-    file: v1/create-free_tools-table.yaml
-    relativeToChangelogFile: true
+      file: v1/create-orders-table.yaml
+      relativeToChangelogFile: true
 
   - include:
-    file: v1/create-material-table.yaml
-    relativeToChangelogFile: true
+      file: v1/create-products-table.yaml
+      relativeToChangelogFile: true
 
   - include:
-    file: v1/create-materials_accounting-table.yaml
-    relativeToChangelogFile: true
+      file: v1/create-material-table.yaml
+      relativeToChangelogFile: true
 
   - include:
-    file: v1/create-op_materials-table.yaml
-    relativeToChangelogFile: true
+      file: v1/create-tool_types-table.yaml
+      relativeToChangelogFile: true
 
   - include:
-    file: v1/create-op_tools-table.yaml
-    relativeToChangelogFile: true
+      file: v1/create-tool-table.yaml
+      relativeToChangelogFile: true
 
   - include:
-    file: v1/create-operations-table.yaml
-    relativeToChangelogFile: true
+      file: v1/create-factory_materials-table.yaml
+      relativeToChangelogFile: true
 
   - include:
-    file: v1/create-orders-table.yaml
-    relativeToChangelogFile: true
+      file: v1/create-factory_tools-table.yaml
+      relativeToChangelogFile: true
 
   - include:
-    file: v1/create-orders_accounting-table.yaml
-    relativeToChangelogFile: true
+      file: v1/create-free_tools-table.yaml
+      relativeToChangelogFile: true
 
   - include:
-    file: v1/create-products-table.yaml
-    relativeToChangelogFile: true
+      file: v1/create-materials_accounting-table.yaml
+      relativeToChangelogFile: true
 
   - include:
-    file: v1/create-tool-table.yaml
-    relativeToChangelogFile: true
+      file: v1/create-op_materials-table.yaml
+      relativeToChangelogFile: true
 
   - include:
-    file: v1/create-tool_types-table.yaml
-    relativeToChangelogFile: true
+      file: v1/create-op_tools-table.yaml
+      relativeToChangelogFile: true
 
   - include:
-    file: v1/create-tools_accounting-table.yaml
-    relativeToChangelogFile: true
+      file: v1/create-orders_accounting-table.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: v1/create-tools_accounting-table.yaml
+      relativeToChangelogFile: true
 

@@ -21,7 +21,7 @@ databaseChangeLog:
               - column:
                   constraints:
                     nullable: false
-                    foreignKey: true
+                    foreignKeyName: fk_products_drawings
                     references: drawings(id)
                   type: INT
                   name: drawing_id

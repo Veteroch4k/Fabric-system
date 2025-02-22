@@ -10,7 +10,7 @@ databaseChangeLog:
                   constraints:
                     nullable: false
                     primaryKey: true
-                    foreignKey: true
+                    foreignKeyName: fk_factory_materials_factories
                     references: factories(id)
                   type: INT
                   name: factory_id
@@ -18,7 +18,7 @@ databaseChangeLog:
                   constraints:
                     nullable: false
                     primaryKey: true
-                    foreignKeyName: true
+                    foreignKeyName: fk_factory_materials_materials
                     references: materials(id)
                   type: INT
                   name: material_id

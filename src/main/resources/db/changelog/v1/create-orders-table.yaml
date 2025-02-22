@@ -16,7 +16,7 @@ databaseChangeLog:
               - column:
                   constraints:
                     nullable: false
-                    foreignKey: true
+                    foreignKeyName: fk_orders_products
                     references: products(id)
                   type: INT
                   name: product_id

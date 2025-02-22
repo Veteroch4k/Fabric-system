@@ -16,28 +16,28 @@ databaseChangeLog:
               - column:
                   constraints:
                     nullable: false
-                    foreignKey: true
+                    foreignKeyName: fk_accounting_tools
                     references: tools(id)
                   type: INT
                   name: tool_id
               - column:
                   constraints:
                     nullable: false
-                    foreignKey: true
+                    foreignKeyName: fk_accounting_tool_types
                     references: tool_types(id)
                   type: INT
                   name: tool_type_id
               - column:
                   constraints:
                     nullable: false
-                    foreignKey: true
+                    foreignKeyName: fk_accounting_tool_factories
                     references: factories(id)
                   type: INT
                   name: factory_id
               - column:
                   constraints:
                     nullable: false
-                    foreignKey: true
+                    foreignKeyName: fk_accounting_tool_orders
                     references: orders(id)
                   type: INT
                   name: order_id

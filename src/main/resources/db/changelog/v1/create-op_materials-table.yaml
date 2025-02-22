@@ -1,29 +1,29 @@
 databaseChangeLog:
-  -changeSet:
-    id: 1
-    author: Veteroch4k
-    changes:
-      - createTable:
-          tableName: op_materials
-          columns:
-            - column:
-              constraints:
-                nullable: null
-                primaryKey: true
-                foreignKey: true
-                references: operations(id)
-              name: operation_id
-              type: INT
-            - column:
-              constraints:
-                nullable: null
-                primaryKey: true
-                foreignKey: true
-                references: materials(id)
-              name: material_id
-              type: INT
-            - column:
-                constraints:
-                  nullable: false
-                name: quantity
-                type: INT
+  - changeSet:
+      id: 1
+      author: Veteroch4k
+      changes:
+        - createTable:
+            tableName: op_materials
+            columns:
+              - column:
+                  constraints:
+                    nullable: null
+                    primaryKey: true
+                    foreignKeyName: fk_op_materials_operations
+                    references: operations(id)
+                  name: operation_id
+                  type: INT
+              - column:
+                  constraints:
+                    nullable: null
+                    primaryKey: true
+                    foreignKeyName: fk_op_materials_materials
+                    references: materials(id)
+                  name: material_id
+                  type: INT
+              - column:
+                  constraints:
+                    nullable: false
+                  name: quantity
+                  type: INT

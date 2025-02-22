@@ -16,7 +16,7 @@ databaseChangeLog:
               - column:
                   constraints:
                     nullable: false
-                    foreignKey: true
-                    references: toolTypes(id)
+                    foreignKeyName: fk_tools_tool_types
+                    references: tool_types(id)
                   type: INT
                   name: toolType_id

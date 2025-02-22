@@ -8,6 +8,10 @@ databaseChangeLog:
       relativeToChangelogFile: true
 
   - include:
+      file: v1/create-products-table.yaml
+      relativeToChangelogFile: true
+
+  - include:
       file: v1/create-drawings-table.yaml
       relativeToChangelogFile: true
 
@@ -20,10 +24,6 @@ databaseChangeLog:
       relativeToChangelogFile: true
 
   - include:
-      file: v1/create-products-table.yaml
-      relativeToChangelogFile: true
-
-  - include:
       file: v1/create-material-table.yaml
       relativeToChangelogFile: true
 
@@ -32,7 +32,7 @@ databaseChangeLog:
       relativeToChangelogFile: true
 
   - include:
-      file: v1/create-tool-table.yaml
+      file: v1/create-tools-table.yaml
       relativeToChangelogFile: true
 
   - include:

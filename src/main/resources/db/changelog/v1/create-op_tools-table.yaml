@@ -1,29 +1,29 @@
 databaseChangeLog:
   - changeSet:
-    id: 2
-    author: Veteroch4k
-    changes:
-      - createTable:
-          tableName: op_tools
-          columns:
-            - column:
-                constraints:
-                  nullable: false
-                  primaryKey: true
-                  foreignKey: true
-                  references: operation(id)
-                type: INT
-                name: operation_id
-            - column:
-                constraints:
-                  nullable: false
-                  primaryKey: true
-                  foreignKLey: true
-                  references: toolTypes(id)
-                type: INT
-                name: toolType_id
-            - column:
-                constraints:
-                  nullable: false
-                type: INT
-                text: quantity
+      id: 2
+      author: Veteroch4k
+      changes:
+        - createTable:
+            tableName: op_tools
+            columns:
+              - column:
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    foreignKeyName: fk_op_tools_operations
+                    references: operations(id)
+                  type: INT
+                  name: operation_id
+              - column:
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    foreignKeyName: fk_op_tools_tool_types
+                    references: tool_types(id)
+                  type: INT
+                  name: toolType_id
+              - column:
+                  constraints:
+                    nullable: false
+                  type: INT
+                  name: quantity

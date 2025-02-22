@@ -16,7 +16,7 @@ databaseChangeLog:
               - column:
                   constraints:
                     nullable: false
-                    foreignKey: true
+                    foreignKeyName: fk_materials_accounting_materials
                     references: materials(id)
                   type: INT
                   name: material_id
@@ -28,7 +28,7 @@ databaseChangeLog:
               - column:
                   constraints:
                     nullable: false
-                    foreignKey: true
+                    foreignKeyName: fk_materials_accounting_products
                     references: products(id)
                   type: INT
                   name: product_id
@@ -40,7 +40,7 @@ databaseChangeLog:
               - column:
                   constraints:
                     nullable: false
-                    foreignKey: true
+                    foreignKeyName: fk_materials_accounting_orders
                     references: orders(id)
                   type: INT
                   name: order_id

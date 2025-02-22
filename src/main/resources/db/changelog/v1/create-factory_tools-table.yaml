@@ -10,7 +10,7 @@ databaseChangeLog:
                   constraints:
                     nullable: false
                     primaryKey: true
-                    foreignKey: true
+                    foreignKeyName: fk_factory_tools_factories
                     references: factories(id)
                   type: INT
                   name: factory_id
@@ -18,8 +18,8 @@ databaseChangeLog:
                   constraints:
                     nullable: false
                     primaryKey: true
-                    foreignKey: true
-                    references: op_tools(id)
+                    foreignKeyName: fk_factory_tools_tool_types
+                    references: tool_types(id)
                   type: INT
                   name: toolType_id
               - column:

@@ -16,15 +16,15 @@ databaseChangeLog:
               - column:
                   constraints:
                     nullable: false
-                    foreignKey: true
+                    foreignKeyName: fk_free_tools_tools
                     references: tools(id)
                   type: INT
                   name: tool_id
               - column:
                   constraints:
                     nullable: false
-                    foreignKey: true
-                    references: toolTypes(id)
+                    foreignKeyName: fk_free_tools_tool_types
+                    references: tool_types(id)
                   type: INT
                   name: toolType_id
               - column:

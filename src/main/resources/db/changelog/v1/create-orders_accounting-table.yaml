@@ -16,14 +16,14 @@ databaseChangeLog:
               - column:
                   constraints:
                     nullable: false
-                    foreignKey: true
+                    foreignKeyName: fk_orders_accounting_factories
                     references: factories(id)
                   type: INT
                   name: factory_id
               - column:
                   constraints:
                     nullable: false
-                    foreignKey: true
+                    foreignKeyName: fk_orders_accounting_products
                     references: products(id)
                   type: INT
                   name: product_id

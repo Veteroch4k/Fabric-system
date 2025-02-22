@@ -7,15 +7,9 @@ databaseChangelog:
           tableName: op_materials
           columns:
             - column:
-              autoIncrement: true
-              constraints:
-                nullable: false
-                primaryKey: true
-              name: id
-              type: INT
-            - column:
               constraints:
                 nullable: null
+                primaryKey: true
                 foreignKey: true
                 references: operations(id)
               name: operation_id
@@ -23,6 +17,7 @@ databaseChangelog:
             - column:
               constraints:
                 nullable: null
+                primaryKey: true
                 foreignKey: true
                 references: materials(id)
               name: material_id

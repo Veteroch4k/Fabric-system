@@ -33,11 +33,11 @@ public class ToolAccounting  {
   private int id;
 
   @OneToMany
-  @JoinColumn(name = "tools_id")
+  @JoinColumn(name = "tool_id")
   private List<Tool> tools ;
 
   @ManyToOne
-  @JoinColumn(name = "toolType_id")
+  @JoinColumn(name = "tool_type_id")
   private ToolType toolType;
 
   @ManyToOne

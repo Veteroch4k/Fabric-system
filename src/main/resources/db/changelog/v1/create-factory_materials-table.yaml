@@ -1,35 +1,29 @@
 databaseChangeLog:
   - changeSet:
-      id: 4
+      id: 9
       author: Veteroch4k
       changes:
         - createTable:
-            tableName: free_tools
+            tableName: factory_materials
             columns:
               - column:
                   constraints:
                     nullable: false
                     primaryKey: true
-                  autoIncrement: true
-                  type: INT
-                  name: id
-              - column:
-                  constraints:
-                    nullable: false
                     foreignKey: true
-                    references: tools(id)
+                    references: factories(id)
                   type: INT
-                  name: tool_id
+                  name: factory_id
               - column:
                   constraints:
                     nullable: false
-                    foreignKey: true
-                    references: toolTypes(id)
+                    primaryKey: true
+                    foreignKeyName: true
+                    references: materials(id)
                   type: INT
-                  name: toolType_id
+                  name: material_id
               - column:
                   constraints:
                     nullable: false
-                  type: DATE
-                  name: receiveDate
-
+                  type: INT
+                  name: quantity

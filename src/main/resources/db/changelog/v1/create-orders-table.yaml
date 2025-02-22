@@ -1,10 +1,10 @@
 databaseChangeLog:
   - changeSet:
-      id: 4
+      id: 15
       author: Veteroch4k
       changes:
         - createTable:
-            tableName: free_tools
+            tableName: orders
             columns:
               - column:
                   constraints:
@@ -17,19 +17,21 @@ databaseChangeLog:
                   constraints:
                     nullable: false
                     foreignKey: true
-                    references: tools(id)
+                    references: products(id)
                   type: INT
-                  name: tool_id
+                  name: product_id
               - column:
                   constraints:
                     nullable: false
-                    foreignKey: true
-                    references: toolTypes(id)
                   type: INT
-                  name: toolType_id
+                  name: quantity
               - column:
                   constraints:
                     nullable: false
                   type: DATE
-                  name: receiveDate
-
+                  name: order_date
+              - column:
+                  constraints:
+                    nullable: false
+                  type: DATE
+                  name: finish_date

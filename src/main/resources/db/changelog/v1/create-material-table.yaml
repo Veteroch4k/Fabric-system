@@ -1,10 +1,10 @@
 databaseChangeLog:
   - changeSet:
+      id: 5
       author: Veteroch4k
-      id: 3
       changes:
         - createTable:
-            tableName: employers
+            tableName: materials
             columns:
               - column:
                   constraints:
@@ -18,3 +18,5 @@ databaseChangeLog:
                     nullable: false
                   type: TEXT
                   name: name
+
+

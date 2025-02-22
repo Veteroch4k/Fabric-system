@@ -21,7 +21,7 @@ import veteroch4k.firm_system.firm.models.consumables.ToolType;
 public class OpTools {
 
   @EmbeddedId
-  private OpToolsId id = new OpToolsId();
+  private OpToolsId id;
 
   @ManyToOne
   @MapsId("operation_id")

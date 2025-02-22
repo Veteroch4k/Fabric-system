@@ -30,8 +30,8 @@ public class Order{
   @JoinColumn(name = "product_id")
   private Product product;
 
-  @Column(name = "product_quantity")
-  private int product_quantity;
+  @Column(name = "quantity")
+  private int quantity;
 
   @Column(name = "order_date")
   private LocalDate order_date;

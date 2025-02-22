@@ -1,10 +1,10 @@
 databaseChangeLog:
   - changeSet:
+      id: 7
       author: Veteroch4k
-      id: 3
       changes:
         - createTable:
-            tableName: employers
+            tableName: tool_types
             columns:
               - column:
                   constraints:
@@ -18,3 +18,8 @@ databaseChangeLog:
                     nullable: false
                   type: TEXT
                   name: name
+              - column:
+                  constraints:
+                    nullable: false
+                  type: TEXT
+                  name: description

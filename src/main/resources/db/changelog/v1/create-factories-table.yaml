@@ -1,10 +1,10 @@
 databaseChangeLog:
   - changeSet:
+      id: 8
       author: Veteroch4k
-      id: 3
       changes:
         - createTable:
-            tableName: employers
+            tableName: factories
             columns:
               - column:
                   constraints:
@@ -18,3 +18,10 @@ databaseChangeLog:
                     nullable: false
                   type: TEXT
                   name: name
+              - column:
+                  constraints:
+                    nullable: false
+                    foreignKey: true
+                    references: operations(id)
+                  type: INT
+                  name: operation_id

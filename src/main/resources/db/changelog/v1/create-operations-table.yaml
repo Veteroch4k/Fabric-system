@@ -7,10 +7,10 @@ databaseChangelog:
             tableName: operations
             columns:
               - column:
-                autoIncrement: true
                 constraints:
                   nullable: false
                   primaryKey: true
+                autoIncrement: true
                 name: id
                 type: INT
               - column:

@@ -7,15 +7,9 @@ databaseChangeLog:
           tableName: op_tools
           columns:
             - column:
-                autoincrement: true
                 constraints:
+                  nullable: false
                   primaryKey: true
-                  nullable: false
-                name: id
-                type: INT
-            - column:
-                constraints:
-                  nullable: false
                   foreignKey: true
                   references: operation(id)
                 type: INT
@@ -23,6 +17,7 @@ databaseChangeLog:
             - column:
                 constraints:
                   nullable: false
+                  primaryKey: true
                   foreignKLey: true
                   references: toolTypes(id)
                 type: INT

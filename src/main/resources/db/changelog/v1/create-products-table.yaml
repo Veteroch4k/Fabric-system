@@ -1,10 +1,10 @@
 databaseChangeLog:
   - changeSet:
+      id: 16
       author: Veteroch4k
-      id: 3
       changes:
         - createTable:
-            tableName: employers
+            tableName: products
             columns:
               - column:
                   constraints:
@@ -17,4 +17,11 @@ databaseChangeLog:
                   constraints:
                     nullable: false
                   type: TEXT
-                  name: name
+                  name: description
+              - column:
+                  constraints:
+                    nullable: false
+                    foreignKey: true
+                    references: drawings(id)
+                  type: INT
+                  name: drawing_id

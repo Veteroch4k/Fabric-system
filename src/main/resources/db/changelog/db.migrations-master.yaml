@@ -2,7 +2,6 @@ databaseChangelog:
   - include:
     file: v1/create-drawings-table.yaml
     relativeToChangelogFile: true
-
   - include:
     file: v1/create-employer-table.yaml
     relativeToChangelogFile: true

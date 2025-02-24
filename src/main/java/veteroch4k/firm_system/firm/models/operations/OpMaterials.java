@@ -40,6 +40,7 @@ public class OpMaterials {
   @MapsId("materialId")
   private Material material;
 
+  @Column(name = "quantity")
   private int quantity;
 
 

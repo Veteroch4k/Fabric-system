@@ -67,3 +67,20 @@ databaseChangeLog:
       file: v1/create-tools_accounting-table.yaml
       relativeToChangelogFile: true
 
+
+
+  - include:
+      file: v2/addColumn-material_accounting-table.yaml
+      relativeToChangelogFile: true
+
+  - include:
+      file: v2/rename-tool-accounting-table.yaml
+      relativeToChangelogFile: true
+
+
+  - include:
+      file: v3/db.migrations-v3.yaml
+      relativeToChangelogFile: true
+
+
+

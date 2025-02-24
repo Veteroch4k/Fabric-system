@@ -2,6 +2,7 @@ package veteroch4k.firm_system.firm.models.operations;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import jakarta.persistence.Column;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
@@ -28,9 +29,10 @@ public class OpTools {
   private Operation operation;
 
   @ManyToOne
-  @MapsId("toolType_id")
+  @MapsId("tool_type_id")
   private ToolType toolType;
 
+  @Column(name = "quantity")
   private int quantity;
 
 

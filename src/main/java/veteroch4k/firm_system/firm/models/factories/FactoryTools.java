@@ -1,6 +1,7 @@
 package veteroch4k.firm_system.firm.models.factories;
 
 
+import jakarta.persistence.Column;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
@@ -19,7 +20,7 @@ import veteroch4k.firm_system.firm.models.consumables.ToolType;
 public class FactoryTools {
 
   @EmbeddedId
-  private FactoryToolsId id = new FactoryToolsId();
+  private FactoryToolsId id;
 
   @ManyToOne
   @MapsId("factory_id")
@@ -29,6 +30,7 @@ public class FactoryTools {
   @MapsId("toolType_id")
   private ToolType toolType;
 
+  @Column(name = "quantity")
   private int quantity;
 
 }

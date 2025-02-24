@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: create-tool_accounting_tools-table.yaml
+      relativeToChangelogFile: true
+  - include:
+      file: removeColumn-tools_accounting-table.yaml
+      relativeToChangelogFile: true

@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2_0
+      author: Veterock4
+      changes:
+        - addColumn:
+            tableName: materials_accounting
+            columns:
+              - column:
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_materials_accounting_employers
+                    references: employers(id)
+                  type: INT
+                  name: employer_id

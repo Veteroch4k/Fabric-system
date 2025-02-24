@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: 3_0
+      author: Veteroch4k
+      changes:
+        - createTable:
+            tableName: tool_accounting_tools
+            columns:
+              - column:
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                  autoIncrement: true
+                  type: INT
+                  name: id
+              - column:
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_tool_accounting_tools_tools_accounting
+                    references: tools_accounting(id)
+                  type: INT
+                  name: tool_accounting_id
+              - column:
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_tool_accounting_tools_tools
+                    references: tools(id)
+                  type: INT
+                  name: tool_id

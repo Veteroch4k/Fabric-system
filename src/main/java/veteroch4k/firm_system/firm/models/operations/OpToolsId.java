@@ -17,6 +17,6 @@ public class OpToolsId implements Serializable {
   private int operation_id;
 
   @Column(name = "toolType_id")
-  private int toolType_id;
+  private int tool_type_id;
 
 }

@@ -34,6 +34,7 @@ public class MaterialsAccounting  {
   @JoinColumn(name = "material_id")
   private Material material;
 
+  @Column(name = "quantity")
   private int quantity;
 
   @ManyToOne
